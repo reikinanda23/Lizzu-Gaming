@@ -1,26 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Lizzu Gaming Promote</title>
-  <style>
-    body {
-      font-family: "Barlow Condensed", sans-serif;
-      background-color: #f4f4f4;
-      color: #000000;
-      text-align: center;
-      margin: 50px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Lizzu Gaming</title>
+<style>
+  /* 🌈 LATAR & FONT DASAR */
+  body {
+    font-family: "Barlow Condensaded", sans-serif;
+    background: linear-gradient(135deg, #ffff, #bdbdbd, #ffffff);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 🌟 ANIMASI MASUK HALUS */
+  body > * {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 2.4em;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 8px 0;
+    color: #000000;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .highlight {
+    color: #0088ff;
+    font-weight: 600;
+  }
+
+  .section {
+    margin-top: 40px;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    color: #2f3640;
+    font-weight: 700;
+  }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff;
+    color: #2f3640;
+    padding: 12px 18px;
+    width: 220px;
+    font-size: 15px;
+    border: 1.5px solid #dcdde1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+  }
+
+  select:hover {
+    border-color: #c94bdf;
+    box-shadow: 0 4px 10px rgba(201,75,223,0.2);
+  }
+
+  select:focus {
+    border-color: #9c27b0;
+    box-shadow: 0 0 6px rgba(201,75,223,0.3);
+  }
+
+  footer {
+    margin-top: 60px;
+    font-size: 13px;
+    color: #888;
+  }
+</style>
 </head>
+<body>
 
-</body>
-  <h1 style="color: #cb6eb6;">Haloo Semuanyaa!!</h1>
-  <p>Follow TikTok Lizzu Gaming Yaa!!!!</p>
+  <h1>Haloo Semuanya!!</h1>
+  <p>Follow Sosmed Lizzu Gaming Yaa!!!</p>
+  <p>Live Streamer dan Life Enjoyerrr 🎮</p>
+  <p>Live Streaming Mobile Legends, Delta Force, dan Game lainnya!!</p>
 
-  </h1>Live Streamer dan Life Enjoyerrr</h1>
-  </p>Live Streaming Mobile Legends, Delta Force, dan Game lainnya!!</p>
-  </p>Stay Tune Terus</p>
-  <p>TikTok: <a href="https://www.tiktok.com/@lizzugaming" target="_blank">Lizzu Gaming</a></p>
+  <div class="section">
+    <p><strong>Stay Tuned✔️</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>Sosmed Lizzu Gaming</h2>
+    <select id="sosmed" onchange="goToLink(this)">
+      <option selected hidden>Pilih Sosmed</option>
+      <option value="https://www.tiktok.com/@lizzugaming">TikTok</option>
+      <option value="https://www.youtube.com/@lizzu_gaming">YouTube</option>
+      <option value="https://www.instagram.com/ljnrna/">Instagram</option>
+    </select>
+  </div>
+
+  <footer>
+    © 2025 Reiki Nanda| All Rights Reserved
+  </footer>
+
+  <script>
+    function goToLink(select) {
+      const link = select.value;
+      if (link) {
+        window.open(link, '_blank');
+        select.selectedIndex = 0;
+      }
+    }
+  </script>
+
 </body>
 </html>
