@@ -1,0 +1,26 @@
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 50px;
+  color: #333;
+}
+
+h1 {
+  color: #F90001;
+  transition: 0.5s;
+}
+
+button {
+  background-color: #F90001;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #c20000;
+}
