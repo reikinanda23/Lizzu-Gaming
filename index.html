@@ -7,7 +7,7 @@
   /* 🌈 LATAR & FONT DASAR */
   body {
     font-family: "Barlow Condensaded", sans-serif;
-    background: linear-gradient(135deg, #ffff, #bdbdbd, #ffffff);
+    background: linear-gradient(135deg, #ffff, #d7c1f7, #ffffff);
     color: #ffffff;
     text-align: center;
     padding: 60px 20px;
@@ -28,7 +28,7 @@
   }
 
   h1 {
-    color: #000000;
+    color: #474747;
     font-size: 2.4em;
     margin-bottom: 15px;
   }
@@ -41,7 +41,7 @@
   }
 
   .highlight {
-    color: #0088ff;
+    color: #00ff11;
     font-weight: 600;
   }
 
@@ -56,43 +56,57 @@
     font-weight: 700;
   }
 
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: #fff;
-    color: #2f3640;
-    padding: 12px 18px;
-    width: 220px;
-    font-size: 15px;
-    border: 1.5px solid #dcdde1;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    outline: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    background-size: 16px;
-  }
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
-  select:hover {
-    border-color: #c94bdf;
-    box-shadow: 0 4px 10px rgba(201,75,223,0.2);
-  }
+  /* Bentuk dan ukuran */
+  width: 230px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
 
-  select:focus {
-    border-color: #9c27b0;
-    box-shadow: 0 0 6px rgba(201,75,223,0.3);
-  }
+  /* Warna */
+  background-color: white;
+  color: #333;
+  border: 2px solid #6e6e6e;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.3);
+
+  /* Ikon panah custom */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='purple' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+
+  /* Transisi halus */
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #0077ff;
+  box-shadow: 0 4px 10px rgba(167,56,213,0.4);
+}
 
   footer {
-    margin-top: 60px;
+    position: fixed;
+    bottom: 10px; /* jarak dari bawah layar */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #444;
     font-size: 13px;
-    color: #888;
+    opacity: 0.8;
   }
+
+select:focus {
+  outline: none;
+  border-color: #00ff11;
+  box-shadow: 0 0 8px rgba(155,48,255,0.5);
+}
 </style>
+
 </head>
 <body>
 
@@ -102,7 +116,7 @@
   <p>Live Streaming Mobile Legends, Delta Force, dan Game lainnya!!</p>
 
   <div class="section">
-    <p><strong>Stay Tuned✔️</strong></p>
+    <highlight><strong>Stay Tuned✔️</strong></highlight>
   </div>
 
   <div class="section">
@@ -114,6 +128,7 @@
       <option value="https://www.instagram.com/ljnrna/">Instagram</option>
     </select>
   </div>
+
 
   <footer>
     © 2025 Reiki Nanda| All Rights Reserved
